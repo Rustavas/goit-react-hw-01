@@ -1,22 +1,25 @@
+import clsx from "clsx";
 import FriendListItem from "./FriendListItem"
+import css from "./friendsList.module.css"
 
 const FriendList = ({friends}) => {
-  return (<div>
-            <ul>
-              {friends.map(({ id, avatar, name, isonline = false })  => {
+  return (
+            <ul className={css.friend_list}>
+              {friends.map(({ id, avatar, name, isOnline })  => {
                 return (
                  <FriendListItem 
                    key={id} 
                    id={id}
                    avatar={avatar} 
                    name={name} 
-                   isonline={isonline}
+                   isOnline={isOnline}
+                  
                  />
                 );
               })
               }
             </ul>
-         </div>)
+  )
 }
 
 export default FriendList;
