@@ -1,16 +1,15 @@
-.friendListItem{
+.friendListItem {
   width: 125px;
   height: 180px;
+  padding: 20px 5px;
   border: 2px solid black;
   border-radius: 8px;
-
-  padding: 20px 5px;
 }
-.isonline{
+.isonline {
   font-size: 24px;
-  color: #32CD32;
+  color: #32cd32;
 }
-.offline{
+.offline {
   font-size: 24px;
-  color: #FF0000;
+  color: #ff0000;
 }
